@@ -5,7 +5,7 @@ import java.util.Random;
 public class ComparisonMain {
 
     public static void main(String[] args) {
-        int opCount = 1000000;
+        int opCount = 100000;
         LoopQueue<Integer> loopQueue = new LoopQueue<>();
         System.out.println(testQueue(loopQueue, opCount));
 
