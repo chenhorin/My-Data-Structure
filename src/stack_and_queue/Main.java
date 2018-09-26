@@ -19,7 +19,7 @@ public class Main {
         System.out.println(main.isValid("{(}"));*/
 
 //       3.Queue
-        Queue queue = new ArrayQueue();
+        Queue queue = new LoopQueue();
         for (int i = 0; i < 10; i++) {
             queue.enqueue(i);
 
