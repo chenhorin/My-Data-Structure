@@ -145,11 +145,14 @@ public class Array<E> {
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("索引越界");
         }
+
         E rem = data[index];
         for (int i = index + 1; i < size; i++) {
             data[i-1] = data[i];
         }
         size--;
+        data[size] = null; //把所有的值往前挪动一位最后一位还是老值...个人推测形式上变为Null称之为loitering num != memory leak
+
         if (size == data.length / 4) {
             resize(data.length / 4);
         }
@@ -162,6 +165,22 @@ public class Array<E> {
 
     public E removeLast() {
         return remove(size - 1);
+    }
+
+//    注意功能性的还是得提前封装
+    /*public E getLast(){
+        return get(size - 1);
+    }
+
+    public E getFirst(){
+        return get(0);
+    }*/
+    public E getLast(){
+    return get(size - 1);
+}
+
+    public E getFirst(){
+        return get(0);
     }
 
     @Override

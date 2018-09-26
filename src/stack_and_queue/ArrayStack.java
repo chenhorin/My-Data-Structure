@@ -38,7 +38,7 @@ public class ArrayStack<E> implements Stack<E> {
 
     @Override
     public E peek() {
-        return data.get(this.getSize() - 1);
+        return data.getLast();
     }
 
     @Override

@@ -14,9 +14,20 @@ public class Main {
         }
         System.out.println(stack);*/
 //        2. leet_code
-        Main main = new Main();
+       /* Main main = new Main();
 //        System.out.println(main.isValid("{[)}"));
-        System.out.println(main.isValid("{(}"));
+        System.out.println(main.isValid("{(}"));*/
+
+//       3.Queue
+        Queue queue = new ArrayQueue();
+        for (int i = 0; i < 10; i++) {
+            queue.enqueue(i);
+
+            if (i % 3 == 2) {
+                queue.dequeue();
+                System.out.println(queue);
+            }
+        }
     }
 
     private boolean isValid(String str) {
