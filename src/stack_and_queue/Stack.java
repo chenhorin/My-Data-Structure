@@ -5,9 +5,9 @@ public interface Stack<E> {
 
     boolean isEmpty();
 
-    E pop(E e);
-
     void push(E e);
+
+    E pop();
 
     E peek();
 }
