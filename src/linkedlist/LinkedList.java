@@ -1,11 +1,11 @@
 package linkedlist;
 
 public class LinkedList<E> {
-    private class Node<E> {
-        private Node next;
-        private E e;
+    private class Node {
+        public E e;
+        public Node next;
 
-        public Node(E e,Node next) {
+        public Node(E e, Node next) {
             this.next = next;
             this.e = e;
         }
@@ -24,11 +24,11 @@ public class LinkedList<E> {
         }
     }
 
-    private Node head;
+    private Node dummyHead;
     private int size;
 
     public LinkedList() {
-        this.head = null;
+        this.dummyHead = new Node();
         this.size = 0;
     }
 
@@ -39,7 +39,19 @@ public class LinkedList<E> {
     public boolean isEmpty() {
         return size == 0;
     }
-//链表的添加因为没有索引,就需要addfirst,addlast
+
+    public boolean cotains(E e) {
+        Node cur = dummyHead.next;
+        while (cur != null) {
+            if (cur.equals(e)) {
+                return true;
+            }
+            cur = cur.next;
+        }
+        return false;
+    }
+
+    //链表的添加因为没有索引,就需要addfirst,addlast
     /*public void addFirst(E e) {
         Node node = new Node(e);
         if (head == null) {
@@ -52,23 +64,22 @@ public class LinkedList<E> {
         head = node;
     }*/
     public void addFirst(E e) {
-        head = new Node(e, head);
-        size++;
+        add(0, e);
     }
 
     public void addLast(E e) {
-        add(size,e);
+        add(size, e);
     }
 
     public void add(int index, E e) {
         if (index < 0 || index > size) {
-            throw new IllegalArgumentException("索引越界");
+            throw new IllegalArgumentException("add fail , index illegal");
         }
-        if (index == 0) {
+        /*if (index == 0) {
             addFirst(e);
-        }
-        Node prev = head;
-        for (int i = 0; i < index - 1; i++) {
+        }*/
+        Node prev = dummyHead;
+        for (int i = 0; i < index; i++) {
             prev = prev.next;
         }
         /*Node node = new Node(e);
@@ -76,5 +87,82 @@ public class LinkedList<E> {
         prev.next = node;*/
         prev.next = new Node(e, prev.next);
         size++;
+    }
+
+    public E get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IllegalArgumentException("get fail , index illegal");
+        }
+        Node cur = dummyHead.next;
+        for (int i = 0; i < index; i++) {
+            cur = cur.next;
+        }
+        return cur.e;
+    }
+
+    public E getFirst() {
+        return get(0);
+    }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    public E remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IllegalArgumentException("remove fail , index illegal");
+        }
+        Node prev = dummyHead;
+        for (int i = 0; i < index; i++) {
+            prev = prev.next;
+        }
+        Node retNode = prev.next;
+        prev.next = retNode.next;
+        size--;
+        return retNode.e;
+    }
+
+    public E removeLast() {
+        return remove(size - 1);
+    }
+
+    public E removeFirst() {
+        return remove(0);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder res = new StringBuilder();
+        res.append(String.format("LinkedList : size = %d\n", size));
+        res.append("head [");
+        Node cur = dummyHead.next;
+        while (cur != null) {
+            res.append(cur.e);
+            if (cur.next != null) {
+                res.append("->");
+            }
+            cur = cur.next;
+        }
+        res.append("] tail");
+        return res.toString();
+    }
+
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        for (int i = 0; i < 10; i++) {
+            list.addLast(i);
+        }
+        System.out.println(list);
+
+        list.remove(6);
+        System.out.println(list);
+
+        list.removeLast();
+        System.out.println(list);
+
+        list.removeFirst();
+        System.out.println(list);
+
+        System.out.println(list.get(0));
     }
 }
