@@ -15,11 +15,11 @@ public class Main {
         System.out.println(stack);*/
 //        2. leet_code
        /* Main main = new Main();
-//        System.out.println(main.isValid("{[)}"));
-        System.out.println(main.isValid("{(}"));*/
+        System.out.println(main.isValid("{[]}"));*/
+//        System.out.println(main.isValid("{(}"));
 
 //       3.Queue
-        Queue queue = new LoopQueue();
+        Queue queue = new LinkedListQueue();
         for (int i = 0; i < 10; i++) {
             queue.enqueue(i);
 
@@ -31,7 +31,7 @@ public class Main {
     }
 
     private boolean isValid(String str) {
-        Stack<Character> stack = new ArrayStack<>();
+        Stack<Character> stack = new LinkedListStack<>();
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             if (c == '{' || c == '[' || c == '(') {

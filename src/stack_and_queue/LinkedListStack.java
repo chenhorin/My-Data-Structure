@@ -5,8 +5,8 @@ import linkedlist.LinkedList;
 public class LinkedListStack<E> implements Stack<E> {
 
     private LinkedList<E> data;
-
-    private int size;
+//  通过子类返回不需要这个字段
+    /*private int size;*/
 
     public LinkedListStack() {
         data = new LinkedList();
@@ -14,7 +14,7 @@ public class LinkedListStack<E> implements Stack<E> {
 
     @Override
     public int getSize() {
-        return size;
+        return data.getSize();
     }
 
     @Override
