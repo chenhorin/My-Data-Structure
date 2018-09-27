@@ -118,6 +118,8 @@ public class LinkedList<E> {
         }
         Node retNode = prev.next;
         prev.next = retNode.next;
+//        为什么需要释放?释放内存方便回收
+        retNode.next = null;
         size--;
         return retNode.e;
     }
