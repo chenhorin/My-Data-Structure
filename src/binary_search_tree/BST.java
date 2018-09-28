@@ -1,5 +1,8 @@
 package binary_search_tree;
 
+import stack_and_queue.LinkedListStack;
+import stack_and_queue.Stack;
+
 public class BST<E extends Comparable<E>> {
     private class Node {
         public E e;
@@ -126,12 +129,33 @@ public class BST<E extends Comparable<E>> {
         preOrder(node.right);
     }
 
+    //    前序遍历非递归
+    public void preOrderNR(Node node) {
+        if (node == null) {
+            return;
+        }
+        Stack<Node> stack = new LinkedListStack<>();
+        stack.push(node);
+
+        while (!stack.isEmpty()) {
+            Node cur = stack.pop();
+            System.out.println(cur);
+
+            if (cur.right != null) {
+                stack.push(cur.right);
+            }
+            if (cur.left != null) {
+                stack.push(cur.left);
+            }
+        }
+    }
+
     // 二分搜索树的中序遍历
     public void inOrder(){
         inOrder(root);
     }
 
-    private void postOrder(Node node) {
+    private void inOrder(Node node) {
         if (node == null) {
             return;
         }
@@ -141,12 +165,12 @@ public class BST<E extends Comparable<E>> {
     }
 
 
-    // 二分搜索树的中序遍历
+    // 二分搜索树的后遍历
     public void postOrder(){
-        inOrder(root);
+        postOrder(root);
     }
 
-    private void inOrder(Node node) {
+    private void postOrder(Node node) {
         if (node == null) {
             return;
         }
