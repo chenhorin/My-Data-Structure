@@ -59,11 +59,36 @@ public class Solutions<E> {
         return dummyhead.next;
     }
 
+    public ListNode removeElements4(ListNode head, int e) {
+        if (head == null) {
+            return null;
+        }
+      /*  ListNode res = removeElements4(head.next, e);
+        if (head.val == e) {
+            return res;
+        }else
+            head = head.next;
+        return head;*/
+        ListNode res = removeElements4(head.next,e);
+        if (head.val == e) {
+            return res;
+        } else {
+            head.next = res;
+            return head;
+        }
+    }
+    public ListNode removeElements5(ListNode head, int e) {
+        if (head == null) {
+            return null;
+        }
+        head.next = removeElements5(head.next, e);
+        return head.val == e ? head.next : head;
+    }
     public static void main(String[] args) {
-        int[] arr = {1, 1,2, 2, 2, 2, 2, 3, 4, 5, 5, 5, 6, 6, 7};
+        int[] arr = {1, 1, 2, 2, 2, 2, 2, 3, 4, 5, 5, 5, 6, 6, 7};
         ListNode node = new ListNode(arr);
         System.out.println(node);
-        System.out.println(new Solutions().removeElements(node, 1));
+        System.out.println(new Solutions().removeElements5(node, 2));
 
     }
 }
