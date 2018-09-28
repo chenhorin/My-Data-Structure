@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/binary_search_tree/BST.java" line="36" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dae5e356-9962-4ddf-908f-4b2ce7b98bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/binary_search_tree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recursion/basic/DebugListNodeRemElementRecursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedlist/solutions/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/solutions/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binary_search_tree/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_search_tree/BST.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,13 +38,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9796" />
+          <entry key="java" value="10368" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9796" />
+          <entry key="JAVA" value="10368" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -89,11 +89,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/binary_search_tree/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="624">
+              <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
               <folding>
                 <element signature="e#400#401#0" expanded="true" />
                 <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#1563#1564#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,7 +163,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="4" />
     <option name="width" value="1930" />
     <option name="height" value="1040" />
@@ -268,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538120585925" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538122341936" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -390,7 +396,7 @@
       <updated>1537931734800</updated>
       <workItem from="1537931737902" duration="21292000" />
       <workItem from="1538012533557" duration="25209000" />
-      <workItem from="1538104110027" duration="9565000" />
+      <workItem from="1538104110027" duration="11357000" />
     </task>
     <task id="LOCAL-00001" summary="数组栈以及leetcode的'{}'判断题目">
       <created>1537941881296</created>
@@ -403,7 +409,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56066000" />
+    <option name="totallyTimeSpent" value="57858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1930" height="1040" extended-state="0" />
@@ -668,11 +674,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/binary_search_tree/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="624">
+          <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
           <folding>
             <element signature="e#400#401#0" expanded="true" />
             <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
           </folding>
         </state>
       </provider>
