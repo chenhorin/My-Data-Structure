@@ -1,6 +1,10 @@
 package linkedlist;
 
+import java.util.Currency;
+
 public class LinkedList<E> {
+
+
     private class Node {
         public E e;
         public Node next;
@@ -40,10 +44,10 @@ public class LinkedList<E> {
         return size == 0;
     }
 
-    public boolean cotains(E e) {
+    public boolean contains(E e) {
         Node cur = dummyHead.next;
         while (cur != null) {
-            if (cur.equals(e)) {
+            if (cur.e.equals(e)) {
                 return true;
             }
             cur = cur.next;
@@ -130,6 +134,23 @@ public class LinkedList<E> {
 
     public E removeFirst() {
         return remove(0);
+    }
+
+    public void removeElement(E e) {
+        removeElement(dummyHead,e);
+    }
+
+    private void removeElement(Node node, E e) {
+
+        while (node.next != null) {
+            Node cur = node.next;
+            if (cur.e == e) {
+                node.next = cur.next;
+                cur = null;
+                size--;
+            }
+            node = node.next;
+        }
     }
 
     @Override

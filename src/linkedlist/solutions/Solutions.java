@@ -1,8 +1,5 @@
 package linkedlist.solutions;
 
-import javax.sound.midi.Soundbank;
-import java.util.List;
-
 public class Solutions<E> {
 
     public ListNode removeElements(ListNode head, int e) {
