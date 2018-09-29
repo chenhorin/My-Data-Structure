@@ -85,7 +85,7 @@ public class BST<E extends Comparable<E>> {
         }
         if (e.compareTo(node.e) < 0) {
             node.left = add(node.left, e);
-        } else if (e.compareTo(node.e) > 0){
+        } else if (e.compareTo(node.e) > 0) {
             node.right = add(node.right, e);
         }
         return node;
@@ -108,7 +108,7 @@ public class BST<E extends Comparable<E>> {
         if (node == null) {
             return false;
         }
-        if (e.equals(node.e)) {
+        if (e.compareTo(node.e) == 0) {
             return true;
         }
         if (e.compareTo(node.e) < 0) {
@@ -154,7 +154,7 @@ public class BST<E extends Comparable<E>> {
     }
 
     // 二分搜索树的中序遍历
-    public void inOrder(){
+    public void inOrder() {
         inOrder(root);
     }
 
@@ -169,7 +169,7 @@ public class BST<E extends Comparable<E>> {
 
 
     // 二分搜索树的后遍历
-    public void postOrder(){
+    public void postOrder() {
         postOrder(root);
     }
 
@@ -182,7 +182,7 @@ public class BST<E extends Comparable<E>> {
         System.out.println(node.e);
     }
 
-//leetcode题目测试
+    //leetcode题目测试
     /*private int uniqueMorseRepresentations(String[] words) {
 
         String[] codes = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
@@ -198,36 +198,155 @@ public class BST<E extends Comparable<E>> {
     }*/
 //    层序遍历
 // 二分搜索树的层序遍历
-public void levelOrder(){
+    public void levelOrder() {
 
-    if(root == null)
-        return;
+        if (root == null)
+            return;
 
-    Queue<Node> q = new LinkedListQueue<>();
-    q.enqueue(root);
-    while(!q.isEmpty()){
-        Node cur = q.dequeue();
-        System.out.println(cur.e);
+        Queue<Node> q = new LinkedListQueue<>();
+        q.enqueue(root);
+        while (!q.isEmpty()) {
+            Node cur = q.dequeue();
+            System.out.println(cur.e);
 
-        if(cur.left != null)
-            q.enqueue(cur.left);
-        if(cur.right != null)
-            q.enqueue(cur.right);
+            if (cur.left != null)
+                q.enqueue(cur.left);
+            if (cur.right != null)
+                q.enqueue(cur.right);
+        }
     }
-}
+
+    public E minimum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST empty");
+        }
+        return minimum(root).e;
+    }
+
+    private Node minimum(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+        return minimum(node.left);
+    }
+
+    public E maximum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST empty");
+        }
+        return maximum(root).e;
+    }
+
+    private Node maximum(Node node) {
+        if (node.right == null) {
+            return node;
+        }
+        return maximum(node.right);
+    }
+
+    public E removeMin() {
+        E ret = minimum();
+        root = removeMin(root);
+        return ret;
+    }
+
+    private Node removeMin(Node node) {
+//        这样node.right也为空了
+        /*if (node.left == null) {
+            node =  null;
+            size--;
+        }*/
+
+        if (node.left == null) {
+            Node rightNode = node.right;
+            node.right = null;
+            size--;
+            return rightNode;
+        }
+        node.left = removeMin(node.left);
+        return node;
+    }
+
+    public E removeMax() {
+        E ret = maximum();
+        root = removeMax(root);
+        return ret;
+    }
+
+    private Node removeMax(Node node) {
+        if (node.right == null) {
+            Node leftNode = node.left;
+            node.left = null;
+            size--;
+            return leftNode;
+        }
+        node.right = removeMax(node.right);
+        return node;
+    }
+
+    public void remove(E e) {
+        root = remove(root,e);
+    }
+
+    private Node remove(Node node, E e) {
+        if (node == null) {
+            return null;
+        }
+        if (e.compareTo(node.e) < 0) {
+            node.left = remove(node.left,e);
+            return node;
+        }
+        if (e.compareTo(node.e) > 0) {
+            node.right = remove(node.right, e);
+            return node;
+        }
+        /*if (e.compareTo(node.e) == 0) {
+            Node success = new Node(e);
+            size--;
+            success.right = node.right;
+            success.left = removeMin(node);
+            node = null;
+        }*/
+        else {
+            if (node.left == null) {
+                Node rightNode = node.right;
+                node.right = null;
+                size--;
+                return rightNode;
+            }
+            if (node.right == null) {
+                Node leftNode = node.left;
+                node.left = null;
+                size--;
+                return leftNode;
+            }
+//          这里的逻辑需要理清,减去右节点的最小节点,但是实际却没有删除,所以需要加size++,时候完成整个过程,需要size--,实际上
+//           removeMin操作已经进行了size--的操作
+
+//           这里存疑,因为node.right按道理应该是已经经过了处理
+            Node successor = minimum(node.right);
+
+            successor.right = removeMin(node.right);
+            successor.left = node.left;
+
+            node.right =  node.left = null;
+            return successor;
+        }
+
+    }
 
 
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        generateBSTString(root,0,res);
+        generateBSTString(root, 0, res);
         return res.toString();
     }
 
     // 生成以node为根节点，深度为depth的描述二叉树的字符串
-    private void generateBSTString(Node node, int depth, StringBuilder res){
+    private void generateBSTString(Node node, int depth, StringBuilder res) {
 
-        if(node == null){
+        if (node == null) {
             res.append(generateDepthString(depth) + "null\n");
             return;
         }
@@ -237,9 +356,9 @@ public void levelOrder(){
         generateBSTString(node.right, depth + 1, res);
     }
 
-    private String generateDepthString(int depth){
+    private String generateDepthString(int depth) {
         StringBuilder res = new StringBuilder();
-        for(int i = 0 ; i < depth ; i ++)
+        for (int i = 0; i < depth; i++)
             res.append("--");
         return res.toString();
     }
