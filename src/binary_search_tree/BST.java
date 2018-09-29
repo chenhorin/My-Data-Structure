@@ -1,6 +1,8 @@
 package binary_search_tree;
 
+import stack_and_queue.LinkedListQueue;
 import stack_and_queue.LinkedListStack;
+import stack_and_queue.Queue;
 import stack_and_queue.Stack;
 
 public class BST<E extends Comparable<E>> {
@@ -72,7 +74,8 @@ public class BST<E extends Comparable<E>> {
     }*/
 //递归算法
     public void add(E e) {
-        add(root,e);
+        /*add(root,e);*/
+        root = add(root, e);
     }
 
     private Node add(Node node, E e) {
@@ -130,16 +133,16 @@ public class BST<E extends Comparable<E>> {
     }
 
     //    前序遍历非递归
-    public void preOrderNR(Node node) {
-        if (node == null) {
+    public void preOrderNR() {
+        if (root == null) {
             return;
         }
         Stack<Node> stack = new LinkedListStack<>();
-        stack.push(node);
+        stack.push(root);
 
         while (!stack.isEmpty()) {
             Node cur = stack.pop();
-            System.out.println(cur);
+            System.out.println(cur.e);
 
             if (cur.right != null) {
                 stack.push(cur.right);
@@ -159,9 +162,9 @@ public class BST<E extends Comparable<E>> {
         if (node == null) {
             return;
         }
-        preOrder(node.left);
+        inOrder(node.left);
         System.out.println(node.e);
-        preOrder(node.right);
+        inOrder(node.right);
     }
 
 
@@ -174,8 +177,8 @@ public class BST<E extends Comparable<E>> {
         if (node == null) {
             return;
         }
-        preOrder(node.left);
-        preOrder(node.right);
+        postOrder(node.left);
+        postOrder(node.right);
         System.out.println(node.e);
     }
 
@@ -193,6 +196,26 @@ public class BST<E extends Comparable<E>> {
 
         return bst.getSize();
     }*/
+//    层序遍历
+// 二分搜索树的层序遍历
+public void levelOrder(){
+
+    if(root == null)
+        return;
+
+    Queue<Node> q = new LinkedListQueue<>();
+    q.enqueue(root);
+    while(!q.isEmpty()){
+        Node cur = q.dequeue();
+        System.out.println(cur.e);
+
+        if(cur.left != null)
+            q.enqueue(cur.left);
+        if(cur.right != null)
+            q.enqueue(cur.right);
+    }
+}
+
 
     @Override
     public String toString() {
