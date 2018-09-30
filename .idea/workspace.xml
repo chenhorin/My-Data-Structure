@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/binary_search_tree/BST.java" line="41" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="dae5e356-9962-4ddf-908f-4b2ce7b98bd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/set_and_map/maps/BSTMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/set_and_map/maps/CompareToEqualsAndDengDengTestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,27 +27,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="java" value="72" />
+          <entry key="java" value="75" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="72" />
+          <entry key="JAVA" value="75" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="36" />
-          <entry key="java" value="13659" />
+          <entry key="dummy" value="108" />
+          <entry key="java" value="15865" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13659" />
-          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="JAVA" value="15865" />
+          <entry key="PLAIN_TEXT" value="138" />
         </counts>
       </usages-collector>
     </session>
@@ -56,21 +55,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/set_and_map/sets/ComparisonBSTSetAndLinkedListMain.java">
+        <entry file="file://$PROJECT_DIR$/src/binary_search_tree/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/set_and_map/sets/LinkedListSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="726">
+              <caret line="283" column="19" lean-forward="true" selection-start-line="283" selection-start-column="19" selection-end-line="283" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6666#6667#0" expanded="true" />
+                <element signature="e#6703#6704#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,16 +77,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="3696">
               <caret line="158" column="71" selection-start-line="158" selection-start-column="71" selection-end-line="158" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1256#1257#0" expanded="true" />
                 <element signature="e#1280#1281#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/BSTMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="232" column="20" lean-forward="true" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/CompareToEqualsAndDengDengTestMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -117,18 +138,6 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#1189#1190#0" expanded="true" />
                 <element signature="e#1232#1233#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/set_and_map/sets/BSTSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +183,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -217,6 +231,9 @@
         <option value="$PROJECT_DIR$/src/retest/Map.java" />
         <option value="$PROJECT_DIR$/src/retest/LinkedListMap.java" />
         <option value="$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java" />
+        <option value="$PROJECT_DIR$/src/set_and_map/maps/Main.java" />
+        <option value="$PROJECT_DIR$/src/set_and_map/maps/CompareToEqualsAndDengDengTestMain.java" />
+        <option value="$PROJECT_DIR$/src/set_and_map/maps/BSTMap.java" />
       </list>
     </option>
   </component>
@@ -343,7 +360,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538276869233" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538290325238" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -377,13 +394,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedListMap">
-    <configuration name="BSTSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="set_and_map.sets.BSTSet" />
+  <component name="RunManager" selected="Application.BSTMap">
+    <configuration name="BSTMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="set_and_map.maps.BSTMap" />
       <module name="My-Date-Structure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="set_and_map.sets.*" />
+          <option name="PATTERN" value="set_and_map.maps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompareToEqualsAndDengDengTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="set_and_map.maps.CompareToEqualsAndDengDengTestMain" />
+      <module name="My-Date-Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="set_and_map.maps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -430,33 +460,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="set_and_map.sets.LinkedListSet" />
-      <module name="My-Date-Structure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="set_and_map.sets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.ComparisonBSTSetAndLinkedListMain" />
-      <item itemvalue="Application.LinkedListSet" />
-      <item itemvalue="Application.BSTSet" />
       <item itemvalue="Application.LinkedListMap" />
       <item itemvalue="Application.LinkedListMap (1)" />
+      <item itemvalue="Application.CompareToEqualsAndDengDengTestMain" />
+      <item itemvalue="Application.BSTMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BSTMap" />
+        <item itemvalue="Application.CompareToEqualsAndDengDengTestMain" />
         <item itemvalue="Application.LinkedListMap" />
         <item itemvalue="Application.LinkedListMap (1)" />
         <item itemvalue="Application.ComparisonBSTSetAndLinkedListMain" />
-        <item itemvalue="Application.BSTSet" />
-        <item itemvalue="Application.LinkedListSet" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +491,7 @@
       <workItem from="1538012533557" duration="25209000" />
       <workItem from="1538104110027" duration="15964000" />
       <workItem from="1538186969475" duration="21548000" />
-      <workItem from="1538273021673" duration="3710000" />
+      <workItem from="1538273021673" duration="13477000" />
     </task>
     <task id="LOCAL-00001" summary="数组栈以及leetcode的'{}'判断题目">
       <created>1537941881296</created>
@@ -487,7 +504,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87723000" />
+    <option name="totallyTimeSpent" value="97490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1930" height="1040" extended-state="0" />
@@ -502,7 +519,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281768" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38563535" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24419889" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46519336" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -733,18 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/binary_search_tree/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7056">
-          <caret line="313" column="23" selection-start-line="313" selection-start-column="23" selection-end-line="313" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6666#6667#0" expanded="true" />
-            <element signature="e#6703#6704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/set_and_map/sets/ComparisonBSTSetAndLinkedListMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -824,12 +829,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="3696">
           <caret line="158" column="71" selection-start-line="158" selection-start-column="71" selection-end-line="158" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1256#1257#0" expanded="true" />
             <element signature="e#1280#1281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/binary_search_tree/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="283" column="19" lean-forward="true" selection-start-line="283" selection-start-column="19" selection-end-line="283" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6703#6704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/CompareToEqualsAndDengDengTestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/BSTMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="232" column="20" lean-forward="true" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
           </folding>
         </state>
       </provider>
