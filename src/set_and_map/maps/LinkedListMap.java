@@ -64,7 +64,30 @@ public class LinkedListMap<K, V> implements Map<K, V> {
 
     @Override
     public V remove(K key) {
-        return null;
+        /*Node prev = dummyHead;
+        Node node = getNode(key);
+        if (node == null) {
+            throw new IllegalArgumentException("can't find");
+        }
+        while (prev.next != node) {
+            prev = prev.next;
+        }
+        prev.next = node.next;
+        node.next = null;*/
+//        时间复杂度要高一些
+        Node prev = dummyHead;
+        V ret = null;
+        while (prev.next != null) {
+            if (prev.next.key.equals(key)) {
+                ret = prev.next.value;
+                Node delNode = prev.next;
+                prev.next = delNode.next;
+                size--;
+                delNode.next = null;
+            }
+            prev = prev.next;
+        }
+        return ret;
     }
 
     @Override
@@ -132,6 +155,9 @@ public class LinkedListMap<K, V> implements Map<K, V> {
             System.out.println("Total different words: " + map.size());
             System.out.println("Frequency of PRIDE: " + map.get("pride"));
             System.out.println("Frequency of PREJUDICE: " + map.get("prejudice"));
+            System.out.println();
+            System.out.println("Frequency of PRIDE: " + map.remove("pride"));
+            System.out.println("Total different words: " + map.size());
         }
 
         System.out.println();

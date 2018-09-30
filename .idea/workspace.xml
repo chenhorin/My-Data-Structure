@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae5e356-9962-4ddf-908f-4b2ce7b98bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/retest/LinkedListMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/retest/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/set_and_map/maps/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/set_and_map/BSTSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_and_map/sets/BSTSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/set_and_map/LinkedListSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_and_map/sets/LinkedListSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/set_and_map/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_and_map/sets/ComparisonBSTSetAndLinkedListMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/set_and_map/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_and_map/sets/Set.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stack_and_queue/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_and_queue/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,13 +41,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="java" value="13294" />
+          <entry key="java" value="13659" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13294" />
+          <entry key="JAVA" value="13659" />
           <entry key="PLAIN_TEXT" value="66" />
         </counts>
       </usages-collector>
@@ -97,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="411">
+              <caret line="158" column="71" selection-start-line="158" selection-start-column="71" selection-end-line="158" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1256#1257#0" expanded="true" />
@@ -235,7 +226,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="width" value="1930" />
     <option name="height" value="1040" />
@@ -352,7 +343,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538275583926" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538276869233" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -483,7 +474,7 @@
       <workItem from="1538012533557" duration="25209000" />
       <workItem from="1538104110027" duration="15964000" />
       <workItem from="1538186969475" duration="21548000" />
-      <workItem from="1538273021673" duration="2303000" />
+      <workItem from="1538273021673" duration="3710000" />
     </task>
     <task id="LOCAL-00001" summary="数组栈以及leetcode的'{}'判断题目">
       <created>1537941881296</created>
@@ -496,13 +487,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86316000" />
+    <option name="totallyTimeSpent" value="87723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1930" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18074866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18074866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -511,7 +502,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281768" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22541437" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38563535" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46519336" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -833,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/set_and_map/maps/LinkedListMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="411">
+          <caret line="158" column="71" selection-start-line="158" selection-start-column="71" selection-end-line="158" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1256#1257#0" expanded="true" />
