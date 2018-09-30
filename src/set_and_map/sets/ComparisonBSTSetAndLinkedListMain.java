@@ -1,8 +1,10 @@
-package set_and_map;
+package set_and_map.sets;
+
+import set_and_map.FileOperation;
 
 import java.util.ArrayList;
 
-public class Main {
+public class ComparisonBSTSetAndLinkedListMain {
 
     private static double testSet(Set<String> set, String filename){
 

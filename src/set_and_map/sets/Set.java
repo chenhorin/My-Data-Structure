@@ -1,4 +1,4 @@
-package set_and_map;
+package set_and_map.sets;
 
 public interface Set<E> {
 

@@ -14,7 +14,7 @@ public class Main {
         }
         System.out.println(stack);*/
 //        2. leet_code
-       /* Main main = new Main();
+       /* ComparisonBSTSetAndLinkedListMain main = new ComparisonBSTSetAndLinkedListMain();
         System.out.println(main.isValid("{[]}"));*/
 //        System.out.println(main.isValid("{(}"));
 
