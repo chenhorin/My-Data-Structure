@@ -206,5 +206,14 @@ public class Array<E> {
             newArray[i] = data[i];
         data = newArray;
     }
+
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("index doesn't exist");
+        }
+        E e = data[i];
+        data[i] = data[j];
+        data[j] = e;
+    }
 }
 
